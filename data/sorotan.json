@@ -1,0 +1,158 @@
+[
+  {
+    "id": "ikn",
+    "judul": "IKN Nusantara",
+    "lokasi": "Sepaku, Penajam Paser Utara, Kalimantan Timur",
+    "mulai": 2022,
+    "kotak": [
+      116.55,
+      -1.1,
+      116.85,
+      -0.85
+    ],
+    "catatan": "Hutan tanaman industri yang gelap sampai 2021. Konstruksi Kawasan Inti Pusat Pemerintahan mulai pertengahan 2022."
+  },
+  {
+    "id": "imip",
+    "judul": "IMIP Morowali",
+    "lokasi": "Bahodopi, Morowali, Sulawesi Tengah",
+    "mulai": 2015,
+    "kotak": [
+      122.05,
+      -2.95,
+      122.3,
+      -2.7
+    ],
+    "catatan": "Kawasan industri nikel terbesar di Indonesia. Smelter pertama beroperasi 2015, lalu PLTU dan pabrik baja tahan karat menyusul."
+  },
+  {
+    "id": "iwip",
+    "judul": "IWIP Weda Bay",
+    "lokasi": "Lelilef, Halmahera Tengah, Maluku Utara",
+    "mulai": 2019,
+    "kotak": [
+      127.8,
+      0.35,
+      128.1,
+      0.62
+    ],
+    "catatan": "Kawasan industri nikel di Teluk Weda. Konstruksi 2018, produksi mulai 2019–2020."
+  },
+  {
+    "id": "obi",
+    "judul": "Pulau Obi",
+    "lokasi": "Kawasi, Halmahera Selatan, Maluku Utara",
+    "mulai": 2016,
+    "kotak": [
+      127.3,
+      -1.7,
+      127.55,
+      -1.45
+    ],
+    "catatan": "Tambang dan smelter nikel Harita, termasuk pabrik HPAL pertama di Indonesia (2021)."
+  },
+  {
+    "id": "buah-naga",
+    "judul": "Kebun buah naga Banyuwangi",
+    "lokasi": "Purwoharjo, Bangorejo, dan sekitarnya, Banyuwangi, Jawa Timur",
+    "mulai": 2016,
+    "kotak": [
+      114.0,
+      -8.63,
+      114.42,
+      -8.3
+    ],
+    "catatan": "Bukan kota, bukan pabrik: petani menyalakan lampu di kebun buah naga semalaman supaya tanaman berbunga di luar musim. Dari orbit, kebunnya kini lebih terang dari kota Banyuwangi."
+  },
+  {
+    "id": "morosi",
+    "judul": "Morosi, Konawe",
+    "lokasi": "Morosi, Konawe, Sulawesi Tenggara",
+    "mulai": 2017,
+    "kotak": [
+      122.3,
+      -4.0,
+      122.55,
+      -3.78
+    ],
+    "catatan": "Kawasan smelter nikel VDNI dan OSS di utara Kendari."
+  },
+  {
+    "id": "mandalika",
+    "judul": "Mandalika",
+    "lokasi": "Pujut, Lombok Tengah, NTB",
+    "mulai": 2019,
+    "kotak": [
+      116.22,
+      -8.95,
+      116.4,
+      -8.82
+    ],
+    "catatan": "Kawasan ekonomi khusus pariwisata dan sirkuit MotoGP (balapan pertama 2022)."
+  },
+  {
+    "id": "yia",
+    "judul": "Bandara YIA",
+    "lokasi": "Temon, Kulon Progo, DI Yogyakarta",
+    "mulai": 2019,
+    "kotak": [
+      109.98,
+      -7.95,
+      110.13,
+      -7.85
+    ],
+    "catatan": "Yogyakarta International Airport, beroperasi penuh 2020 di bekas lahan pertanian pesisir."
+  },
+  {
+    "id": "kertajati",
+    "judul": "Bandara Kertajati",
+    "lokasi": "Kertajati, Majalengka, Jawa Barat",
+    "mulai": 2018,
+    "kotak": [
+      108.08,
+      -6.72,
+      108.26,
+      -6.58
+    ],
+    "catatan": "Bandara Internasional Jawa Barat, diresmikan 2018."
+  },
+  {
+    "id": "batang",
+    "judul": "Kawasan Industri Batang",
+    "lokasi": "Gringsing, Batang, Jawa Tengah",
+    "mulai": 2020,
+    "kotak": [
+      109.82,
+      -7.0,
+      110.02,
+      -6.88
+    ],
+    "catatan": "Kawasan Industri Terpadu Batang di jalur pantura, dibangun sejak 2020."
+  },
+  {
+    "id": "labuan-bajo",
+    "judul": "Labuan Bajo",
+    "lokasi": "Komodo, Manggarai Barat, NTT",
+    "mulai": 2016,
+    "kotak": [
+      119.82,
+      -8.56,
+      119.95,
+      -8.43
+    ],
+    "catatan": "Gerbang Taman Nasional Komodo, ditetapkan sebagai destinasi super prioritas."
+  },
+  {
+    "id": "grasberg",
+    "judul": "Grasberg",
+    "lokasi": "Tembagapura, Mimika, Papua Tengah",
+    "mulai": 2012,
+    "kotak": [
+      136.95,
+      -4.2,
+      137.25,
+      -3.95
+    ],
+    "catatan": "Tambang tembaga dan emas Freeport. Tambang terbuka selesai 2019, operasi pindah ke bawah tanah."
+  }
+]

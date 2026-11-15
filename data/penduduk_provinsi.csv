@@ -1,0 +1,571 @@
+kode_prov,provinsi,tahun,penduduk
+11,Aceh,2012,4640668
+11,Aceh,2013,4715573
+11,Aceh,2014,4791686
+11,Aceh,2015,4869028
+11,Aceh,2016,4947618
+11,Aceh,2017,5027477
+11,Aceh,2018,5108625
+11,Aceh,2019,5191082
+11,Aceh,2020,5274871
+11,Aceh,2021,5343298
+11,Aceh,2022,5412613
+11,Aceh,2023,5482827
+11,Aceh,2024,5553952
+11,Aceh,2025,5626000
+11,Aceh,2026,5698982
+12,Sumatera Utara,2012,13326845
+12,Sumatera Utara,2013,13502581
+12,Sumatera Utara,2014,13680635
+12,Sumatera Utara,2015,13861036
+12,Sumatera Utara,2016,14043817
+12,Sumatera Utara,2017,14229007
+12,Sumatera Utara,2018,14416640
+12,Sumatera Utara,2019,14606747
+12,Sumatera Utara,2020,14799361
+12,Sumatera Utara,2021,14991590
+12,Sumatera Utara,2022,15186315
+12,Sumatera Utara,2023,15383570
+12,Sumatera Utara,2024,15583387
+12,Sumatera Utara,2025,15785800
+12,Sumatera Utara,2026,15990842
+13,Sumatera Barat,2012,4977223
+13,Sumatera Barat,2013,5043689
+13,Sumatera Barat,2014,5111041
+13,Sumatera Barat,2015,5179294
+13,Sumatera Barat,2016,5248457
+13,Sumatera Barat,2017,5318544
+13,Sumatera Barat,2018,5389568
+13,Sumatera Barat,2019,5461539
+13,Sumatera Barat,2020,5534472
+13,Sumatera Barat,2021,5608434
+13,Sumatera Barat,2022,5683385
+13,Sumatera Barat,2023,5759337
+13,Sumatera Barat,2024,5836304
+13,Sumatera Barat,2025,5914300
+13,Sumatera Barat,2026,5993338
+14,Riau,2012,5699819
+14,Riau,2013,5782302
+14,Riau,2014,5865978
+14,Riau,2015,5950866
+14,Riau,2016,6036981
+14,Riau,2017,6124343
+14,Riau,2018,6212969
+14,Riau,2019,6302877
+14,Riau,2020,6394087
+14,Riau,2021,6475414
+14,Riau,2022,6557776
+14,Riau,2023,6641185
+14,Riau,2024,6725655
+14,Riau,2025,6811200
+14,Riau,2026,6897833
+15,Jambi,2012,3178511
+15,Jambi,2013,3222531
+15,Jambi,2014,3267162
+15,Jambi,2015,3312410
+15,Jambi,2016,3358285
+15,Jambi,2017,3404796
+15,Jambi,2018,3451950
+15,Jambi,2019,3499758
+15,Jambi,2020,3548228
+15,Jambi,2021,3591228
+15,Jambi,2022,3634748
+15,Jambi,2023,3678796
+15,Jambi,2024,3723378
+15,Jambi,2025,3768500
+15,Jambi,2026,3814169
+16,Sumatera Selatan,2012,7643526
+16,Sumatera Selatan,2013,7741961
+16,Sumatera Selatan,2014,7841664
+16,Sumatera Selatan,2015,7942651
+16,Sumatera Selatan,2016,8044938
+16,Sumatera Selatan,2017,8148543
+16,Sumatera Selatan,2018,8253482
+16,Sumatera Selatan,2019,8359773
+16,Sumatera Selatan,2020,8467432
+16,Sumatera Selatan,2021,8557700
+16,Sumatera Selatan,2022,8648931
+16,Sumatera Selatan,2023,8741134
+16,Sumatera Selatan,2024,8834320
+16,Sumatera Selatan,2025,8928500
+16,Sumatera Selatan,2026,9023684
+17,Bengkulu,2012,1770861
+17,Bengkulu,2013,1799198
+17,Bengkulu,2014,1827989
+17,Bengkulu,2015,1857240
+17,Bengkulu,2016,1886960
+17,Bengkulu,2017,1917155
+17,Bengkulu,2018,1947833
+17,Bengkulu,2019,1979002
+17,Bengkulu,2020,2010670
+17,Bengkulu,2021,2035514
+17,Bengkulu,2022,2060666
+17,Bengkulu,2023,2086128
+17,Bengkulu,2024,2111905
+17,Bengkulu,2025,2138000
+17,Bengkulu,2026,2164418
+18,Lampung,2012,7869717
+18,Lampung,2013,8003719
+18,Lampung,2014,8140004
+18,Lampung,2015,8278608
+18,Lampung,2016,8419573
+18,Lampung,2017,8562938
+18,Lampung,2018,8708745
+18,Lampung,2019,8857034
+18,Lampung,2020,9007848
+18,Lampung,2021,9108580
+18,Lampung,2022,9210439
+18,Lampung,2023,9313436
+18,Lampung,2024,9417586
+18,Lampung,2025,9522900
+18,Lampung,2026,9629392
+19,Kepulauan Bangka Belitung,2012,1266597
+19,Kepulauan Bangka Belitung,2013,1288818
+19,Kepulauan Bangka Belitung,2014,1311430
+19,Kepulauan Bangka Belitung,2015,1334438
+19,Kepulauan Bangka Belitung,2016,1357850
+19,Kepulauan Bangka Belitung,2017,1381673
+19,Kepulauan Bangka Belitung,2018,1405913
+19,Kepulauan Bangka Belitung,2019,1430579
+19,Kepulauan Bangka Belitung,2020,1455678
+19,Kepulauan Bangka Belitung,2021,1474224
+19,Kepulauan Bangka Belitung,2022,1493006
+19,Kepulauan Bangka Belitung,2023,1512027
+19,Kepulauan Bangka Belitung,2024,1531291
+19,Kepulauan Bangka Belitung,2025,1550800
+19,Kepulauan Bangka Belitung,2026,1570558
+21,Kepulauan Riau,2012,1750008
+21,Kepulauan Riau,2013,1786543
+21,Kepulauan Riau,2014,1823841
+21,Kepulauan Riau,2015,1861918
+21,Kepulauan Riau,2016,1900790
+21,Kepulauan Riau,2017,1940473
+21,Kepulauan Riau,2018,1980985
+21,Kepulauan Riau,2019,2022343
+21,Kepulauan Riau,2020,2064564
+21,Kepulauan Riau,2021,2093527
+21,Kepulauan Riau,2022,2122896
+21,Kepulauan Riau,2023,2152678
+21,Kepulauan Riau,2024,2182877
+21,Kepulauan Riau,2025,2213500
+21,Kepulauan Riau,2026,2244552
+31,DKI Jakarta,2012,9791487
+31,DKI Jakarta,2013,9884650
+31,DKI Jakarta,2014,9978699
+31,DKI Jakarta,2015,10073643
+31,DKI Jakarta,2016,10169491
+31,DKI Jakarta,2017,10266251
+31,DKI Jakarta,2018,10363931
+31,DKI Jakarta,2019,10462540
+31,DKI Jakarta,2020,10562088
+31,DKI Jakarta,2021,10585169
+31,DKI Jakarta,2022,10608301
+31,DKI Jakarta,2023,10631483
+31,DKI Jakarta,2024,10654716
+31,DKI Jakarta,2025,10678000
+31,DKI Jakarta,2026,10701335
+32,Jawa Barat,2012,44050576
+32,Jawa Barat,2013,44557620
+32,Jawa Barat,2014,45070500
+32,Jawa Barat,2015,45589284
+32,Jawa Barat,2016,46114040
+32,Jawa Barat,2017,46644835
+32,Jawa Barat,2018,47181740
+32,Jawa Barat,2019,47724826
+32,Jawa Barat,2020,48274162
+32,Jawa Barat,2021,48761202
+32,Jawa Barat,2022,49253157
+32,Jawa Barat,2023,49750074
+32,Jawa Barat,2024,50252005
+32,Jawa Barat,2025,50759000
+32,Jawa Barat,2026,51271110
+33,Jawa Tengah,2012,33170094
+33,Jawa Tengah,2013,33570965
+33,Jawa Tengah,2014,33976680
+33,Jawa Tengah,2015,34387298
+33,Jawa Tengah,2016,34802878
+33,Jawa Tengah,2017,35223481
+33,Jawa Tengah,2018,35649167
+33,Jawa Tengah,2019,36079998
+33,Jawa Tengah,2020,36516035
+33,Jawa Tengah,2021,36853319
+33,Jawa Tengah,2022,37193719
+33,Jawa Tengah,2023,37537263
+33,Jawa Tengah,2024,37883980
+33,Jawa Tengah,2025,38233900
+33,Jawa Tengah,2026,38587052
+34,DI Yogyakarta,2012,3498741
+34,DI Yogyakarta,2013,3519549
+34,DI Yogyakarta,2014,3540482
+34,DI Yogyakarta,2015,3561539
+34,DI Yogyakarta,2016,3582722
+34,DI Yogyakarta,2017,3604030
+34,DI Yogyakarta,2018,3625465
+34,DI Yogyakarta,2019,3647028
+34,DI Yogyakarta,2020,3668719
+34,DI Yogyakarta,2021,3691003
+34,DI Yogyakarta,2022,3713422
+34,DI Yogyakarta,2023,3735977
+34,DI Yogyakarta,2024,3758670
+34,DI Yogyakarta,2025,3781500
+34,DI Yogyakarta,2026,3804469
+35,Jawa Timur,2012,38093883
+35,Jawa Timur,2013,38406246
+35,Jawa Timur,2014,38721171
+35,Jawa Timur,2015,39038678
+35,Jawa Timur,2016,39358789
+35,Jawa Timur,2017,39681524
+35,Jawa Timur,2018,40006906
+35,Jawa Timur,2019,40334956
+35,Jawa Timur,2020,40665696
+35,Jawa Timur,2021,40946512
+35,Jawa Timur,2022,41229266
+35,Jawa Timur,2023,41513974
+35,Jawa Timur,2024,41800647
+35,Jawa Timur,2025,42089300
+35,Jawa Timur,2026,42379946
+36,Banten,2012,10875271
+36,Banten,2013,10998900
+36,Banten,2014,11123934
+36,Banten,2015,11250390
+36,Banten,2016,11378284
+36,Banten,2017,11507631
+36,Banten,2018,11638448
+36,Banten,2019,11770753
+36,Banten,2020,11904562
+36,Banten,2021,12028521
+36,Banten,2022,12153771
+36,Banten,2023,12280325
+36,Banten,2024,12408197
+36,Banten,2025,12537400
+36,Banten,2026,12667949
+51,Bali,2012,3972572
+51,Bali,2013,4014123
+51,Bali,2014,4056108
+51,Bali,2015,4098533
+51,Bali,2016,4141401
+51,Bali,2017,4184717
+51,Bali,2018,4228487
+51,Bali,2019,4272714
+51,Bali,2020,4317404
+51,Bali,2021,4345807
+51,Bali,2022,4374397
+51,Bali,2023,4403175
+51,Bali,2024,4432142
+51,Bali,2025,4461300
+51,Bali,2026,4490650
+52,Nusa Tenggara Barat,2012,4653398
+52,Nusa Tenggara Barat,2013,4731936
+52,Nusa Tenggara Barat,2014,4811799
+52,Nusa Tenggara Barat,2015,4893009
+52,Nusa Tenggara Barat,2016,4975591
+52,Nusa Tenggara Barat,2017,5059566
+52,Nusa Tenggara Barat,2018,5144959
+52,Nusa Tenggara Barat,2019,5231793
+52,Nusa Tenggara Barat,2020,5320092
+52,Nusa Tenggara Barat,2021,5399865
+52,Nusa Tenggara Barat,2022,5480834
+52,Nusa Tenggara Barat,2023,5563018
+52,Nusa Tenggara Barat,2024,5646433
+52,Nusa Tenggara Barat,2025,5731100
+52,Nusa Tenggara Barat,2026,5817036
+53,Nusa Tenggara Timur,2012,4805669
+53,Nusa Tenggara Timur,2013,4867773
+53,Nusa Tenggara Timur,2014,4930680
+53,Nusa Tenggara Timur,2015,4994400
+53,Nusa Tenggara Timur,2016,5058943
+53,Nusa Tenggara Timur,2017,5124321
+53,Nusa Tenggara Timur,2018,5190543
+53,Nusa Tenggara Timur,2019,5257621
+53,Nusa Tenggara Timur,2020,5325566
+53,Nusa Tenggara Timur,2021,5406477
+53,Nusa Tenggara Timur,2022,5488617
+53,Nusa Tenggara Timur,2023,5572004
+53,Nusa Tenggara Timur,2024,5656659
+53,Nusa Tenggara Timur,2025,5742600
+53,Nusa Tenggara Timur,2026,5829847
+61,Kalimantan Barat,2012,4583051
+61,Kalimantan Barat,2013,4679550
+61,Kalimantan Barat,2014,4778080
+61,Kalimantan Barat,2015,4878685
+61,Kalimantan Barat,2016,4981408
+61,Kalimantan Barat,2017,5086294
+61,Kalimantan Barat,2018,5193389
+61,Kalimantan Barat,2019,5302738
+61,Kalimantan Barat,2020,5414390
+61,Kalimantan Barat,2021,5482953
+61,Kalimantan Barat,2022,5552385
+61,Kalimantan Barat,2023,5622696
+61,Kalimantan Barat,2024,5693897
+61,Kalimantan Barat,2025,5766000
+61,Kalimantan Barat,2026,5839016
+62,Kalimantan Tengah,2012,2296907
+62,Kalimantan Tengah,2013,2340527
+62,Kalimantan Tengah,2014,2384976
+62,Kalimantan Tengah,2015,2430269
+62,Kalimantan Tengah,2016,2476423
+62,Kalimantan Tengah,2017,2523452
+62,Kalimantan Tengah,2018,2571375
+62,Kalimantan Tengah,2019,2620209
+62,Kalimantan Tengah,2020,2669969
+62,Kalimantan Tengah,2021,2704092
+62,Kalimantan Tengah,2022,2738651
+62,Kalimantan Tengah,2023,2773651
+62,Kalimantan Tengah,2024,2809099
+62,Kalimantan Tengah,2025,2845000
+62,Kalimantan Tengah,2026,2881360
+63,Kalimantan Selatan,2012,3711903
+63,Kalimantan Selatan,2013,3755295
+63,Kalimantan Selatan,2014,3799195
+63,Kalimantan Selatan,2015,3843608
+63,Kalimantan Selatan,2016,3888541
+63,Kalimantan Selatan,2017,3933998
+63,Kalimantan Selatan,2018,3979987
+63,Kalimantan Selatan,2019,4026514
+63,Kalimantan Selatan,2020,4073584
+63,Kalimantan Selatan,2021,4122346
+63,Kalimantan Selatan,2022,4171691
+63,Kalimantan Selatan,2023,4221627
+63,Kalimantan Selatan,2024,4272161
+63,Kalimantan Selatan,2025,4323300
+63,Kalimantan Selatan,2026,4375051
+64,Kalimantan Timur,2012,3135421
+64,Kalimantan Timur,2013,3208075
+64,Kalimantan Timur,2014,3282412
+64,Kalimantan Timur,2015,3358472
+64,Kalimantan Timur,2016,3436294
+64,Kalimantan Timur,2017,3515920
+64,Kalimantan Timur,2018,3597390
+64,Kalimantan Timur,2019,3680749
+64,Kalimantan Timur,2020,3766039
+64,Kalimantan Timur,2021,3861398
+64,Kalimantan Timur,2022,3959172
+64,Kalimantan Timur,2023,4059422
+64,Kalimantan Timur,2024,4162209
+64,Kalimantan Timur,2025,4267600
+64,Kalimantan Timur,2026,4375659
+65,Kalimantan Utara,2012,584296
+65,Kalimantan Utara,2013,597835
+65,Kalimantan Utara,2014,611688
+65,Kalimantan Utara,2015,625863
+65,Kalimantan Utara,2016,640365
+65,Kalimantan Utara,2017,655203
+65,Kalimantan Utara,2018,670386
+65,Kalimantan Utara,2019,685920
+65,Kalimantan Utara,2020,701814
+65,Kalimantan Utara,2021,711083
+65,Kalimantan Utara,2022,720475
+65,Kalimantan Utara,2023,729990
+65,Kalimantan Utara,2024,739631
+65,Kalimantan Utara,2025,749400
+65,Kalimantan Utara,2026,759298
+71,Sulawesi Utara,2012,2336877
+71,Sulawesi Utara,2013,2370740
+71,Sulawesi Utara,2014,2405093
+71,Sulawesi Utara,2015,2439944
+71,Sulawesi Utara,2016,2475300
+71,Sulawesi Utara,2017,2511169
+71,Sulawesi Utara,2018,2547557
+71,Sulawesi Utara,2019,2584473
+71,Sulawesi Utara,2020,2621923
+71,Sulawesi Utara,2021,2641523
+71,Sulawesi Utara,2022,2661270
+71,Sulawesi Utara,2023,2681164
+71,Sulawesi Utara,2024,2701207
+71,Sulawesi Utara,2025,2721400
+71,Sulawesi Utara,2026,2741744
+72,Sulawesi Tengah,2012,2701692
+72,Sulawesi Tengah,2013,2735664
+72,Sulawesi Tengah,2014,2770063
+72,Sulawesi Tengah,2015,2804895
+72,Sulawesi Tengah,2016,2840165
+72,Sulawesi Tengah,2017,2875878
+72,Sulawesi Tengah,2018,2912040
+72,Sulawesi Tengah,2019,2948657
+72,Sulawesi Tengah,2020,2985734
+72,Sulawesi Tengah,2021,3019055
+72,Sulawesi Tengah,2022,3052748
+72,Sulawesi Tengah,2023,3086817
+72,Sulawesi Tengah,2024,3121266
+72,Sulawesi Tengah,2025,3156100
+72,Sulawesi Tengah,2026,3191322
+73,Sulawesi Selatan,2012,8232544
+73,Sulawesi Selatan,2013,8333246
+73,Sulawesi Selatan,2014,8435180
+73,Sulawesi Selatan,2015,8538361
+73,Sulawesi Selatan,2016,8642804
+73,Sulawesi Selatan,2017,8748525
+73,Sulawesi Selatan,2018,8855538
+73,Sulawesi Selatan,2019,8963861
+73,Sulawesi Selatan,2020,9073509
+73,Sulawesi Selatan,2021,9169380
+73,Sulawesi Selatan,2022,9266263
+73,Sulawesi Selatan,2023,9364171
+73,Sulawesi Selatan,2024,9463113
+73,Sulawesi Selatan,2025,9563100
+73,Sulawesi Selatan,2026,9664144
+74,Sulawesi Tenggara,2012,2306048
+74,Sulawesi Tenggara,2013,2343680
+74,Sulawesi Tenggara,2014,2381927
+74,Sulawesi Tenggara,2015,2420797
+74,Sulawesi Tenggara,2016,2460302
+74,Sulawesi Tenggara,2017,2500452
+74,Sulawesi Tenggara,2018,2541257
+74,Sulawesi Tenggara,2019,2582727
+74,Sulawesi Tenggara,2020,2624875
+74,Sulawesi Tenggara,2021,2665935
+74,Sulawesi Tenggara,2022,2707638
+74,Sulawesi Tenggara,2023,2749992
+74,Sulawesi Tenggara,2024,2793010
+74,Sulawesi Tenggara,2025,2836700
+74,Sulawesi Tenggara,2026,2881074
+75,Gorontalo,2012,1065230
+75,Gorontalo,2013,1077988
+75,Gorontalo,2014,1090900
+75,Gorontalo,2015,1103966
+75,Gorontalo,2016,1117188
+75,Gorontalo,2017,1130569
+75,Gorontalo,2018,1144110
+75,Gorontalo,2019,1157814
+75,Gorontalo,2020,1171681
+75,Gorontalo,2021,1185457
+75,Gorontalo,2022,1199395
+75,Gorontalo,2023,1213497
+75,Gorontalo,2024,1227765
+75,Gorontalo,2025,1242200
+75,Gorontalo,2026,1256805
+76,Sulawesi Barat,2012,1206626
+76,Sulawesi Barat,2013,1231353
+76,Sulawesi Barat,2014,1256587
+76,Sulawesi Barat,2015,1282338
+76,Sulawesi Barat,2016,1308617
+76,Sulawesi Barat,2017,1335434
+76,Sulawesi Barat,2018,1362801
+76,Sulawesi Barat,2019,1390729
+76,Sulawesi Barat,2020,1419229
+76,Sulawesi Barat,2021,1439836
+76,Sulawesi Barat,2022,1460742
+76,Sulawesi Barat,2023,1481952
+76,Sulawesi Barat,2024,1503470
+76,Sulawesi Barat,2025,1525300
+76,Sulawesi Barat,2026,1547447
+81,Maluku,2012,1591960
+81,Maluku,2013,1622017
+81,Maluku,2014,1652642
+81,Maluku,2015,1683845
+81,Maluku,2016,1715637
+81,Maluku,2017,1748030
+81,Maluku,2018,1781034
+81,Maluku,2019,1814661
+81,Maluku,2020,1848923
+81,Maluku,2021,1872642
+81,Maluku,2022,1896665
+81,Maluku,2023,1920997
+81,Maluku,2024,1945640
+81,Maluku,2025,1970600
+81,Maluku,2026,1995880
+82,Maluku Utara,2012,1082999
+82,Maluku Utara,2013,1106179
+82,Maluku Utara,2014,1129854
+82,Maluku Utara,2015,1154036
+82,Maluku Utara,2016,1178736
+82,Maluku Utara,2017,1203965
+82,Maluku Utara,2018,1229734
+82,Maluku Utara,2019,1256054
+82,Maluku Utara,2020,1282937
+82,Maluku Utara,2021,1300616
+82,Maluku Utara,2022,1318538
+82,Maluku Utara,2023,1336707
+82,Maluku Utara,2024,1355127
+82,Maluku Utara,2025,1373800
+82,Maluku Utara,2026,1392731
+91,Papua,2012,718869
+91,Papua,2013,749555
+91,Papua,2014,781551
+91,Papua,2015,814913
+91,Papua,2016,849699
+91,Papua,2017,885970
+91,Papua,2018,923789
+91,Papua,2019,963222
+91,Papua,2020,1004339
+91,Papua,2021,1017824
+91,Papua,2022,1031490
+91,Papua,2023,1045340
+91,Papua,2024,1059376
+91,Papua,2025,1073600
+91,Papua,2026,1088015
+92,Papua Barat,2012,395432
+92,Papua Barat,2013,411557
+92,Papua Barat,2014,428340
+92,Papua Barat,2015,445807
+92,Papua Barat,2016,463987
+92,Papua Barat,2017,482908
+92,Papua Barat,2018,502600
+92,Papua Barat,2019,523096
+92,Papua Barat,2020,544427
+92,Papua Barat,2021,552800
+92,Papua Barat,2022,561302
+92,Papua Barat,2023,569934
+92,Papua Barat,2024,578700
+92,Papua Barat,2025,587600
+92,Papua Barat,2026,596637
+93,Papua Selatan,2012,368072
+93,Papua Selatan,2013,383784
+93,Papua Selatan,2014,400167
+93,Papua Selatan,2015,417248
+93,Papua Selatan,2016,435059
+93,Papua Selatan,2017,453630
+93,Papua Selatan,2018,472994
+93,Papua Selatan,2019,493185
+93,Papua Selatan,2020,514237
+93,Papua Selatan,2021,521142
+93,Papua Selatan,2022,528139
+93,Papua Selatan,2023,535230
+93,Papua Selatan,2024,542417
+93,Papua Selatan,2025,549700
+93,Papua Selatan,2026,557081
+94,Papua Tengah,2012,999226
+94,Papua Tengah,2013,1041879
+94,Papua Tengah,2014,1086354
+94,Papua Tengah,2015,1132726
+94,Papua Tengah,2016,1181078
+94,Papua Tengah,2017,1231495
+94,Papua Tengah,2018,1284063
+94,Papua Tengah,2019,1338875
+94,Papua Tengah,2020,1396027
+94,Papua Tengah,2021,1414771
+94,Papua Tengah,2022,1433768
+94,Papua Tengah,2023,1453019
+94,Papua Tengah,2024,1472528
+94,Papua Tengah,2025,1492300
+94,Papua Tengah,2026,1512337
+95,Papua Pegunungan,2012,994271
+95,Papua Pegunungan,2013,1036713
+95,Papua Pegunungan,2014,1080967
+95,Papua Pegunungan,2015,1127109
+95,Papua Pegunungan,2016,1175222
+95,Papua Pegunungan,2017,1225388
+95,Papua Pegunungan,2018,1277695
+95,Papua Pegunungan,2019,1332236
+95,Papua Pegunungan,2020,1389104
+95,Papua Pegunungan,2021,1407756
+95,Papua Pegunungan,2022,1426658
+95,Papua Pegunungan,2023,1445813
+95,Papua Pegunungan,2024,1465226
+95,Papua Pegunungan,2025,1484900
+95,Papua Pegunungan,2026,1504838
+96,Papua Barat Daya,2012,428273
+96,Papua Barat Daya,2013,445737
+96,Papua Barat Daya,2014,463914
+96,Papua Barat Daya,2015,482832
+96,Papua Barat Daya,2016,502521
+96,Papua Barat Daya,2017,523013
+96,Papua Barat Daya,2018,544341
+96,Papua Barat Daya,2019,566538
+96,Papua Barat Daya,2020,589641
+96,Papua Barat Daya,2021,598710
+96,Papua Barat Daya,2022,607918
+96,Papua Barat Daya,2023,617267
+96,Papua Barat Daya,2024,626761
+96,Papua Barat Daya,2025,636400
+96,Papua Barat Daya,2026,646188

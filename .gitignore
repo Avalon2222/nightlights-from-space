@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+/test-results/
+/playwright-report/
+
+# next.js
+/.next/
+/out/
+/build
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+public/maplibre/
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+
+# ubin mentah GIBS dan komposit antara (besar, bisa dibangun ulang)
+/cache/

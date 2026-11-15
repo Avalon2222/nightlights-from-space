@@ -1,0 +1,68 @@
+[
+  {
+    "id": "seroja-2021",
+    "judul": "Siklon tropis Seroja",
+    "tanggal": "2021-04-04",
+    "jenis": "siklon",
+    "lokasi": "Kupang dan sekitarnya, NTT",
+    "ringkas": "Seroja melintas dekat Kupang pada 4–5 April 2021 dan merobohkan jaringan listrik di sebagian besar NTT. Dua malam pertama tertutup awan badai; begitu langit terbuka, Kupang tinggal seperlima terangnya.",
+    "sumber": "https://id.wikipedia.org/wiki/Siklon_Seroja",
+    "kotak": [123.45, -10.4, 124.1, -9.95],
+    "sesudah": [2, 8]
+  },
+  {
+    "id": "banjir-sumatra-2025",
+    "judul": "Banjir bandang dan longsor Sumatra",
+    "tanggal": "2025-11-26",
+    "jenis": "banjir",
+    "lokasi": "Pesisir timur Aceh: Bireuen sampai Aceh Tamiang",
+    "ringkas": "Akhir November 2025 hujan ekstrem dari siklon Senyar memicu banjir bandang dan longsor di Aceh, Sumatera Utara, dan Sumatera Barat. Di pesisir timur Aceh cahaya turun sejak malam cerah pertama dan belum kembali penuh berminggu-minggu kemudian.",
+    "sumber": "https://en.wikipedia.org/wiki/2025_Sumatra_floods_and_landslides",
+    "kotak": [96.4, 4.0, 98.4, 5.35],
+    "sesudah": [19, 25]
+  },
+  {
+    "id": "lombok-2018",
+    "judul": "Gempa Lombok",
+    "tanggal": "2018-08-05",
+    "jenis": "gempa",
+    "lokasi": "Lombok Utara dan Mataram, NTB",
+    "ringkas": "Gempa M 6,9 pada 5 Agustus 2018, disusul gempa besar lagi 19 Agustus. Musim kemarau membuat hampir tiap malam terpantau, jadi deretnya rapat tapi naik-turun mengikuti fase bulan dan sudut pandang satelit.",
+    "sumber": "https://id.wikipedia.org/wiki/Gempa_bumi_Lombok_5_Agustus_2018",
+    "kotak": [115.95, -8.72, 116.5, -8.2],
+    "sesudah": [7, 10]
+  },
+  {
+    "id": "palu-2018",
+    "judul": "Gempa, tsunami, dan likuefaksi Palu",
+    "tanggal": "2018-09-28",
+    "jenis": "gempa",
+    "lokasi": "Kota Palu, Sulawesi Tengah",
+    "ringkas": "Gempa M 7,5 pada 28 September 2018 memicu tsunami di Teluk Palu dan likuefaksi di Balaroa dan Petobo. Malam itu juga cahaya kota turun, tetapi malam-malam berikutnya banyak yang berawan sehingga penurunannya hanya tertangkap sepotong-sepotong.",
+    "sumber": "https://id.wikipedia.org/wiki/Gempa_bumi_dan_tsunami_Sulawesi_2018",
+    "kotak": [119.78, -1.0, 119.97, -0.8],
+    "sesudah": [0, 0]
+  },
+  {
+    "id": "blackout-jawa-2019",
+    "judul": "Blackout Jawa bagian barat",
+    "tanggal": "2019-08-04",
+    "jenis": "blackout",
+    "lokasi": "Jabodetabek dan sekitarnya",
+    "ringkas": "Gangguan transmisi 500 kV memadamkan Jakarta, Banten, dan sebagian Jawa Barat mulai 11.48 WIB, 4 Agustus 2019. Satelit baru lewat sekitar 01.30 dini hari, saat sebagian besar listrik sudah menyala lagi, jadi yang terekam hanya sisa padamnya.",
+    "sumber": "https://en.wikipedia.org/wiki/2019_Java_blackout",
+    "kotak": [106.6, -6.45, 107.1, -6.05],
+    "sesudah": [0, 0]
+  },
+  {
+    "id": "cianjur-2022",
+    "judul": "Gempa Cianjur",
+    "tanggal": "2022-11-21",
+    "jenis": "gempa",
+    "lokasi": "Cianjur, Jawa Barat",
+    "ringkas": "Gempa M 5,6 pada 21 November 2022 merusak puluhan ribu rumah. Di data malam hampir tidak ada jejaknya: November itu musim hujan, awan menutup Cianjur nyaris tiap malam, dan listrik pulih dalam hitungan hari. Contoh jujur soal batas metode ini.",
+    "sumber": "https://id.wikipedia.org/wiki/Gempa_bumi_Cianjur_2022",
+    "kotak": [106.95, -6.95, 107.3, -6.68],
+    "sesudah": [0, 6]
+  }
+]
