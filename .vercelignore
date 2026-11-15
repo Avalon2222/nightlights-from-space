@@ -1,0 +1,4 @@
+# tidak dibutuhkan untuk build di Vercel
+tests
+docs
+.github
