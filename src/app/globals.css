@@ -1,0 +1,263 @@
+@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+:root {
+  --bg: #03050b;
+  --panel: rgba(8, 12, 22, 0.78);
+  --panel-padat: rgba(8, 12, 22, 0.95);
+  --garis: rgba(255, 255, 255, 0.09);
+  --garis-kuat: rgba(255, 255, 255, 0.18);
+  --teks: #e8ebf2;
+  --redup: #98a3b8;
+  --samar: #7682a0;
+  --aksen: #ffb35c;
+  --emas: #ffd98a;
+  --naik: #3fe3c0;
+  --turun: #ff6b8e;
+  --pln: #7fb4ff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-teks: var(--teks);
+  --color-redup: var(--redup);
+  --color-samar: var(--samar);
+  --color-aksen: var(--aksen);
+  --color-emas: var(--emas);
+  --color-naik: var(--naik);
+  --color-turun: var(--turun);
+  --color-pln: var(--pln);
+  --color-garis: var(--garis);
+  --color-garis-kuat: var(--garis-kuat);
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--teks);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: rgba(255, 179, 92, 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid var(--aksen);
+  outline-offset: 2px;
+}
+
+@layer components {
+  .kaca {
+    background: var(--panel);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid var(--garis);
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .kaca-padat {
+    background: var(--panel-padat);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid var(--garis-kuat);
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .angka {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  .label-kecil {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--samar);
+  }
+
+  .gulung {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  }
+
+  .gulung-x {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .gulung-x::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 34px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--garis);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--redup);
+    font-size: 12.5px;
+    white-space: nowrap;
+    transition:
+      background 0.15s,
+      color 0.15s,
+      border-color 0.15s;
+  }
+  .chip:hover {
+    color: var(--teks);
+    border-color: var(--garis-kuat);
+  }
+  .chip[aria-pressed="true"],
+  .chip[aria-selected="true"] {
+    background: rgba(255, 179, 92, 0.16);
+    border-color: rgba(255, 179, 92, 0.55);
+    color: var(--emas);
+  }
+
+  .baris-pilih {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--teks);
+    text-align: left;
+    transition:
+      background 0.15s,
+      border-color 0.15s;
+  }
+  .baris-pilih:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .baris-pilih[aria-pressed="true"] {
+    background: rgba(255, 179, 92, 0.1);
+    border-color: rgba(255, 179, 92, 0.4);
+  }
+
+  .tombol-ikon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex: none;
+    border-radius: 999px;
+    border: 1px solid var(--garis);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--teks);
+    transition:
+      background 0.15s,
+      border-color 0.15s;
+  }
+  .tombol-ikon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--garis-kuat);
+  }
+}
+
+/* slider garis waktu */
+.geser {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 28px;
+  background: transparent;
+  margin: 0;
+}
+.geser::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--aksen) var(--isi, 0%), rgba(255, 255, 255, 0.16) var(--isi, 0%));
+}
+.geser::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.geser::-moz-range-progress {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--aksen);
+}
+.geser::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: #fff7e6;
+  border: 2px solid var(--aksen);
+  box-shadow: 0 0 14px rgba(255, 179, 92, 0.8);
+}
+.geser::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff7e6;
+  border: 2px solid var(--aksen);
+  box-shadow: 0 0 14px rgba(255, 179, 92, 0.8);
+}
+
+/* MapLibre: atribusi menyatu dengan tema gelap */
+.maplibregl-ctrl-attrib {
+  background: rgba(3, 5, 11, 0.7) !important;
+  color: var(--samar);
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--redup);
+}
+.maplibregl-ctrl-attrib-button {
+  filter: invert(1) opacity(0.6);
+}
+.maplibregl-canvas:focus-visible {
+  outline: none;
+}
+
+/* di ponsel pojok kanan bawah tertutup panel, jadi atribusi pindah ke bawah header */
+@media (max-width: 1023px) {
+  .maplibregl-ctrl-bottom-right {
+    bottom: auto;
+    top: 100px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
