@@ -83,7 +83,7 @@ def statistik() -> dict:
         "tahun": tahun,
         "sampel": [{"jumlah": int(r["jumlah_sampel"]), "pertama": r["sampel_pertama"], "terakhir": r["sampel_terakhir"]} for r in nasional],
         "ambang": AMBANG,
-        "potong": gibs.NILAI_POTONG,
+        "potong": None,
         "nasional": {
             "cahaya": [bulat(r["cahaya"], 0) for r in nasional],
             "luasTerang": [bulat(r["luas_terang_km2"], 0) for r in nasional],

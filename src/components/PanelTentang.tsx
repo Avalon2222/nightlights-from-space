@@ -22,24 +22,26 @@ export default function PanelTentang({ s }: { s: Statistik }) {
     <div>
       <Judul kecil="Tentang · metodologi">Dari piksel satelit ke angka per kabupaten</Judul>
       <Catatan>
-        Semua yang tampil di sini dihitung dari data terbuka, tanpa akun atau kunci API, dan bisa dibangun ulang dari skrip di
-        repositorinya.
+        Semua yang tampil di sini dihitung dari data terbuka NASA dan BPS, dan bisa dibangun ulang dari skrip di repositorinya.
       </Catatan>
 
       <Sub>Sumber citra</Sub>
       <ul className="m-0 list-disc pl-4">
         <li className={butir}>
-          <Tautan href="https://blackmarble.gsfc.nasa.gov/">NASA Black Marble</Tautan> VNP46A2: radiance malam harian dari sensor VIIRS
-          Day/Night Band (satelit Suomi NPP), sudah dikoreksi cahaya bulan, atmosfer, dan sudut pandang, lalu diisi-celah saat berawan.
+          <Tautan href="https://blackmarble.gsfc.nasa.gov/">NASA Black Marble</Tautan>: radiance malam dari sensor VIIRS Day/Night Band
+          (satelit Suomi NPP), sudah dikoreksi cahaya bulan, atmosfer, dan sudut pandang.
         </li>
         <li className={butir}>
-          Diambil lewat <Tautan href="https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api">NASA GIBS</Tautan> di
-          zoom 8, sekitar 600 m per piksel.
+          Time-lapse dan semua statistik memakai komposit tahunan resmi <em>VNP46A4</em> (2012–{s.tahun[s.tahun.length - 2]}) dari arsip NASA
+          LAADS, berkas HDF5 beresolusi 15 detik busur dengan radiance penuh tanpa batas atas. {s.tahun[s.tahun.length - 1]} belum punya
+          komposit tahunan, jadi dipakai median komposit bulanan <em>VNP46A3</em> sampai {tanggal(akhir.terakhir)}.
         </li>
         <li className={butir}>
-          Komposit tahunan = median per piksel dari dua malam tiap bulan (tanggal 6 dan 21). Median membuang cahaya sesaat seperti
-          kebakaran lahan, kapal, dan petir. Data terakhir: {tanggal(akhir.terakhir)}.
+          Mode harian dan kejadian padam memakai produk harian <em>VNP46A2</em> lewat{" "}
+          <Tautan href="https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api">NASA GIBS</Tautan>, yang
+          diisi-celah saat berawan.
         </li>
+        <li className={butir}>Semuanya dipetakan ke grid yang sama: Web Mercator zoom 8, sekitar 600 m per piksel.</li>
       </ul>
 
       <Sub>Cara menghitung</Sub>
@@ -80,8 +82,12 @@ export default function PanelTentang({ s }: { s: Statistik }) {
       <Sub>Yang perlu diingat</Sub>
       <ul className="m-0 list-disc pl-4">
         <li className={butir}>
-          Rendering GIBS memotong radiance di {angka(s.potong, 1)} nW/cm²/sr. Inti kota besar (Jakarta, Surabaya) sudah mentok sejak
-          2012, jadi pertumbuhan cahayanya terhitung terlalu kecil. Luas terang tidak terpengaruh.
+          Komposit tahunan adalah rata-rata semua malam cerah, jadi kebakaran lahan besar atau suar gas yang menyala berbulan-bulan
+          ikut terhitung sebagai cahaya di tahun itu.
+        </li>
+        <li className={butir}>
+          Citra harian dari GIBS terpotong di 38,2 nW/cm²/sr. Itu hanya memengaruhi mode harian dan indeks kejadian padam di inti
+          kota besar, bukan statistik tahunan.
         </li>
         <li className={butir}>
           Cahaya bukan listrik rumah tangga. Lampu jalan, pabrik, pelabuhan, tambang, dan suar gas ikut terhitung; desa yang baru

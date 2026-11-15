@@ -22,7 +22,7 @@ export default function PanelTimelapse({ s, i, harian, maksHarian, saatHarian, s
   const n = s.nasional;
   const tahun = s.tahun[i];
   const idxCahaya = jadiIndeks(n.cahaya);
-  const parsial = i === s.tahun.length - 1 && s.sampel[i].jumlah < 22;
+  const parsial = i === s.tahun.length - 1 && s.sampel[i].jumlah < 12;
   const gelap = (idx: number) => s.kabupaten.filter((k) => k.luasTerang[idx] === 0).length;
   return (
     <div>

@@ -47,7 +47,7 @@ export default function PanelHotspot({ daftar, tahun, i, terpilih, saatPilih }: 
           <Angka label={`Cahaya ${tahun[i]}`} nilai={angka(s.cahaya[i])} catatan="radiance × km² di dalam kotak" warna="var(--emas)" />
           <Angka label="Kelipatan" nilai={teksKelipatan(kelipatan(s.cahaya))} catatan={`${tahun[0]}–${tahun[2]} ke ${tahun[tahun.length - 3]}–${tahun[tahun.length - 1]}: ${angka(rataUjung(s.cahaya, 3, "awal"))} → ${angka(rataUjung(s.cahaya, 3, "akhir"))}`} />
           <Angka label="Luas terang" nilai={`${angka(s.luasTerang[i], 1)} km²`} catatan={`dari ${angka(s.luasTerang[0], 1)} km² di ${tahun[0]}`} />
-          <Angka label="Piksel paling terang" nilai={angka(s.puncak[i], 1)} catatan={s.puncak[i] >= 38 ? "mentok di batas 38,2" : "nW/cm²/sr"} />
+          <Angka label="Piksel paling terang" nilai={angka(s.puncak[i], 1)} catatan="nW/cm²/sr" />
         </div>
         <Sub>Cahaya per tahun</Sub>
         <GrafikGaris judul={`Total cahaya tahunan di ${s.judul}`} x={tahun} tanda={i} seri={[{ nama: "Total cahaya di dalam kotak", warna: "#ffb35c", nilai: s.cahaya }]} dariNol />

@@ -22,7 +22,8 @@ describe("statistik.json", () => {
     expect(s.tahun[0]).toBe(2012);
     s.tahun.forEach((t, i) => expect(t).toBe(2012 + i));
     expect(s.sampel).toHaveLength(n);
-    for (const x of s.sampel) expect(x.jumlah).toBeGreaterThanOrEqual(12);
+    // tahun penuh = 12 bulan; tahun berjalan boleh kurang
+    s.sampel.forEach((x, i) => expect(x.jumlah).toBeGreaterThanOrEqual(i === n - 1 ? 6 : 12));
   });
 
   it("38 provinsi dan 514 kabupaten/kota dengan kode unik", () => {
@@ -78,6 +79,13 @@ describe("statistik.json", () => {
       expect(p.pdrb).not.toBeNull();
       expect(p.pdrb!.berlaku).toBeGreaterThan(p.pdrb!.konstan);
     }
+  });
+
+  it("statistik tahunan tidak terpotong: Jakarta punya piksel di atas batas GIBS", () => {
+    expect(s.potong).toBeNull();
+    const jakarta = s.kabupaten.filter((k) => k.prov === "31");
+    const rerata = jakarta.reduce((t, k) => t + k.cahaya[n - 1], 0) / jakarta.reduce((t, k) => t + k.luasTerang[n - 1], 0);
+    expect(rerata).toBeGreaterThan(38.2);
   });
 
   it("cahaya nasional sekarang lebih dari dua kali 2012", () => {
@@ -157,7 +165,7 @@ describe("sorotan.json", () => {
       for (const d of [x.cahaya, x.luasTerang, x.puncak]) expect(d).toHaveLength(n);
       expect(x.pusat[0]).toBeGreaterThan(x.kotak[0]);
       expect(x.pusat[0]).toBeLessThan(x.kotak[2]);
-      expect(Math.max(...x.puncak)).toBeLessThanOrEqual(s.potong + 0.01);
+      expect(Math.max(...x.puncak)).toBeGreaterThan(5);
     }
   });
 

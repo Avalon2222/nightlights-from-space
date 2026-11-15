@@ -196,7 +196,7 @@ function Analisis({ s, i, wilayah, saatPilih }: { s: Statistik; i: number; wilay
             <span className="angka text-teks">{angka(Math.pow(2, garis.b), 1)}</span> kali
           </>
         ) : null}
-        . Titik jauh di atas garis = ekonomi besar tapi hemat cahaya (atau terpotong di inti kota); jauh di bawah = terang tapi nilai
+        . Titik jauh di atas garis = ekonomi besar tapi hemat cahaya; jauh di bawah = terang tapi nilai
         tambahnya kecil.
       </p>
     </div>

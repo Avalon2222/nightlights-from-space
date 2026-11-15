@@ -1,4 +1,5 @@
 numpy>=2.1
 pillow>=11
 requests>=2.32
+h5py>=3.12
 pytest>=8

@@ -27,7 +27,8 @@ export interface Statistik {
   tahun: number[];
   sampel: { jumlah: number; pertama: string; terakhir: string }[];
   ambang: number;
-  potong: number;
+  /** batas atas radiance kalau sumbernya terpotong; null = tidak terpotong */
+  potong: number | null;
   nasional: { cahaya: number[]; luasTerang: number[]; penduduk: number[]; pln: (number | null)[] };
   provinsi: Provinsi[];
   kabupaten: Kabupaten[];
