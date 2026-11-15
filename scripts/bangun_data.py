@@ -4,6 +4,8 @@ Keluaran:
   - public/data/statistik.json   deret tahunan nasional, 38 provinsi, 514 kabupaten/kota
   - public/data/sorotan.json     deret tahunan titik pembangunan baru (kalau komposit tersedia)
   - src/lib/gibsNilai.json       tingkat abu ubin GIBS (0..255) -> radiance, untuk mode harian
+  - data/ringkasan_provinsi.csv, data/hotspot_tahunan.csv, data/kejadian_padam.csv
+                                 tabel rapi untuk dipakai di luar aplikasi (satu baris per provinsi-tahun, dst.)
 """
 
 from __future__ import annotations
@@ -124,6 +126,41 @@ def nilai_gibs() -> list[float]:
     return hasil
 
 
+def tulis_csv(nama: str, kepala: list[str], baris: list[list]) -> None:
+    with (DATA / nama).open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(kepala)
+        w.writerows(baris)
+
+
+def tabel_rapi(s: dict) -> None:
+    """Tabel siap pakai: gabungan cahaya, listrik PLN, dan penduduk per provinsi-tahun, plus hotspot dan kejadian."""
+    baris = []
+    for p in s["provinsi"]:
+        for i, t in enumerate(s["tahun"]):
+            penduduk = p["penduduk"][i]
+            baris.append([
+                p["kode"], p["nama"], t, p["cahaya"][i], p["luasTerang"][i],
+                round(p["luasTerang"][i] / p["luasKm2"] * 100, 2) if p["luasKm2"] else "",
+                "" if p["pln"][i] is None else p["pln"][i], penduduk,
+                round(p["cahaya"][i] / penduduk * 1000, 3) if penduduk else "",
+            ])
+    tulis_csv("ringkasan_provinsi.csv", ["kode_prov", "provinsi", "tahun", "cahaya", "luas_terang_km2", "persen_wilayah_terang", "persen_rt_pln", "penduduk", "cahaya_per_1000_penduduk"], baris)
+
+    sorotan_json = PUBLIK / "sorotan.json"
+    if sorotan_json.exists():
+        baris = [[x["id"], x["judul"], x["lokasi"], t, x["cahaya"][i], x["luasTerang"][i]] for x in json.loads(sorotan_json.read_text(encoding="utf-8")) for i, t in enumerate(s["tahun"])]
+        tulis_csv("hotspot_tahunan.csv", ["id", "hotspot", "lokasi", "tahun", "cahaya", "luas_terang_km2"], baris)
+
+    kejadian_json = PUBLIK / "kejadian.json"
+    if kejadian_json.exists():
+        baris = [
+            [k["id"], k["judul"], k["tanggal"], k["jenis"], k["lokasi"], k["terendah"]["indeks"], k["terendah"]["hari"], "" if k["hariPulih"] is None else k["hariPulih"], k["luasTerangKm2"]]
+            for k in json.loads(kejadian_json.read_text(encoding="utf-8"))
+        ]
+        tulis_csv("kejadian_padam.csv", ["id", "kejadian", "tanggal", "jenis", "lokasi", "indeks_terendah", "hari_terendah", "hari_pulih", "luas_terang_km2"], baris)
+
+
 def main() -> None:
     PUBLIK.mkdir(parents=True, exist_ok=True)
     s = statistik()
@@ -135,6 +172,7 @@ def main() -> None:
         for x in sr:
             print("  ", x["id"], x["cahaya"])
     (gibs.AKAR / "src" / "lib" / "gibsNilai.json").write_text(json.dumps(nilai_gibs()), encoding="utf-8")
+    tabel_rapi(s)
 
 
 if __name__ == "__main__":

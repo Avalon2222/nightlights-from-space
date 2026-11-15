@@ -59,7 +59,7 @@ def main() -> None:
         cahaya, luas = zonal(komposit, label, luas_baris, n)
         sampel = json.loads((gibs.OLAH / f"sampel_{t}.json").read_text())
         for i, k in enumerate(kab):
-            baris_kab.append([k["kode"], t, round(float(cahaya[i]), 1), round(float(luas[i]), 1)])
+            baris_kab.append([k["kode"], k["nama"], k["provinsi"], t, round(float(cahaya[i]), 1), round(float(luas[i]), 1)])
             p = prov.setdefault((k["kode_prov"], t), [0.0, 0.0])
             p[0] += float(cahaya[i])
             p[1] += float(luas[i])
@@ -68,7 +68,7 @@ def main() -> None:
 
     with (DATA / "cahaya_kabupaten.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["kode", "tahun", "cahaya", "luas_terang_km2"])
+        w.writerow(["kode", "kabupaten_kota", "provinsi", "tahun", "cahaya", "luas_terang_km2"])
         w.writerows(baris_kab)
     with (DATA / "cahaya_provinsi.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)

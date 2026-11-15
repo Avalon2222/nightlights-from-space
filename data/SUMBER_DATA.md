@@ -19,6 +19,9 @@ Olahan di folder ini:
 - `cahaya_nasional.csv`, `cahaya_provinsi.csv`, `cahaya_kabupaten.csv`: per tahun, `cahaya` (jumlah radiance × km² piksel
   terang) dan `luas_terang_km2` (piksel dengan radiance ≥ 1 nW/cm²/sr setelah koreksi latar). `cahaya_nasional.csv` juga
   mencatat jumlah sampel dan tanggal sampel pertama dan terakhir tiap tahun.
+- `ringkasan_provinsi.csv`: satu baris per provinsi-tahun, sudah digabung dengan persen rumah tangga PLN, penduduk, dan
+  cahaya per 1.000 penduduk. `hotspot_tahunan.csv` dan `kejadian_padam.csv`: versi tabel dari deret hotspot dan ringkasan
+  kejadian. Tiga berkas ini yang dipakai [talk-to-the-data](https://github.com/Avalon2222/talk-to-the-data).
 - `latar_tahunan.csv`: tingkat latar yang dikurangkan dari komposit tiap tahun (rata-rata radiance daratan yang selalu gelap).
 - `palet.json`: titik warna untuk ubin dan legenda.
 - `kejadian.json`, `sorotan.json`: daftar kejadian padam dan titik pembangunan (lokasi, kotak, catatan). Deretnya
