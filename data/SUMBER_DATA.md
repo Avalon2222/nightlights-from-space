@@ -1,24 +1,34 @@
 # Sumber Data
 
 Semua data di repo ini berasal dari sumber publik dan bisa dibangun ulang dengan skrip di `scripts/`.
-Tidak ada yang butuh akun atau kunci API. Diunduh 15 November 2026.
+Hanya berkas tahunan dan bulanan dari NASA LAADS yang butuh token Earthdata (gratis); sisanya terbuka. Diunduh 15 November 2026.
 
 ## 1. Cahaya malam
 
+Tahunan dan bulanan (dipakai time-lapse dan semua statistik):
+
 | Hal | Keterangan |
 |---|---|
-| Produk | NASA Black Marble **VNP46A2**: *Gap-Filled BRDF-Corrected Day/Night Band Radiance*, harian, sensor VIIRS di satelit Suomi NPP |
-| Diambil lewat | NASA GIBS, lapisan `VIIRS_SNPP_GapFilled_BRDF_Corrected_DayNightBand_Radiance`, `GoogleMapsCompatible_Level8` (zoom 8, sekitar 600 m per piksel) |
+| Produk | NASA Black Marble **VNP46A4** (komposit tahunan, 2012–2025) dan **VNP46A3** (komposit bulanan, Januari–Oktober 2026), koleksi 2, sensor VIIRS di satelit Suomi NPP |
+| Lapisan | `AllAngle_Composite_Snow_Free`, radiance dalam nW/cm²/sr tanpa batas atas, piksel 15 detik busur |
+| Diambil dari | NASA LAADS DAAC: `https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/` dan `.../VNP46A3/`. Butuh token NASA Earthdata (gratis) |
+| Cakupan | 18 ubin h27–h32, v08–v10 (90°–150° BT, 20° LS–10° LU), dirata-rata ke grid Web Mercator zoom 8 |
+| Lisensi | Data NASA, bebas dipakai. Kutipan: Román, M.O. dkk. (2018), *NASA Black Marble nighttime lights product suite*, Remote Sensing of Environment 210 |
+
+Harian (dipakai mode harian dan kejadian padam):
+
+| Hal | Keterangan |
+|---|---|
+| Produk | NASA Black Marble **VNP46A2**: *Gap-Filled BRDF-Corrected Day/Night Band Radiance* |
+| Diambil lewat | NASA GIBS, lapisan `VIIRS_SNPP_GapFilled_BRDF_Corrected_DayNightBand_Radiance`, zoom 8, tanpa akun |
 | Titik akses | `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/{lapisan}/default/{tanggal}/GoogleMapsCompatible_Level8/8/{y}/{x}.png` |
-| Cakupan | Ubin x 195–228, y 123–135 (94,2° BT – 142,0° BT; 11,2° LS – 7,0° LU), 19 Januari 2012 sampai 21 Oktober 2026 |
-| Satuan | nW/cm²/sr. PNG berpalet 180 tingkat; tiap indeks dikembalikan ke nilai tengah rentangnya lewat colormap resmi (`scripts/colormap_dnb.xml`). Rentang teratas "38,2 ke atas" dicatat sebagai 38,2 |
-| Lisensi | Data NASA, bebas dipakai. Kutipan: Román, M.O. dkk. (2018), *NASA's Black Marble nighttime lights product suite*, Remote Sensing of Environment 210 |
+| Satuan | PNG berpalet 180 tingkat; tiap indeks dikembalikan ke nilai tengah rentangnya lewat colormap resmi (`scripts/colormap_dnb.xml`). Rentang teratas "38,2 ke atas" dicatat sebagai 38,2 |
 
 Olahan di folder ini:
 
 - `cahaya_nasional.csv`, `cahaya_provinsi.csv`, `cahaya_kabupaten.csv`: per tahun, `cahaya` (jumlah radiance × km² piksel
   terang) dan `luas_terang_km2` (piksel dengan radiance ≥ 1 nW/cm²/sr setelah koreksi latar). `cahaya_nasional.csv` juga
-  mencatat jumlah sampel dan tanggal sampel pertama dan terakhir tiap tahun.
+  mencatat jumlah bulan yang tercakup dan akhir bulan pertama dan terakhir tiap tahun.
 - `ringkasan_provinsi.csv`: satu baris per provinsi-tahun, sudah digabung dengan persen rumah tangga PLN, penduduk, dan
   cahaya per 1.000 penduduk. `hotspot_tahunan.csv` dan `kejadian_padam.csv`: versi tabel dari deret hotspot dan ringkasan
   kejadian. Tiga berkas ini yang dipakai [talk-to-the-data](https://github.com/Avalon2222/talk-to-the-data).
